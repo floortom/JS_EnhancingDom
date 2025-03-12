@@ -1,3 +1,14 @@
-function logMessage() {
-    console.log("Don't click me!");
-}
+// function logMessage() {
+//   console.log("Don't click me!");
+// }
+
+// document.getElementById("logButton").onclick = () => {
+//   console.log("don't click me!");
+// };
+
+document.getElementById("logButton").addEventListener("click", () => {
+  console.log("Don't clicke me!");
+});
+document.getElementById("logButton").addEventListener("click", (event) => {
+  console.log(event);
+});
